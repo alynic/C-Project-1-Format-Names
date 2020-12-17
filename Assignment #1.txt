@@ -1,0 +1,53 @@
+
+
+* Objectives:
+  To learn list programming using C++. 
+  To learn input/output in C++.
+  This program is to change the format of names. 
+
+  (*requirement) 
+  Use array or/and linked-list for implementation.  
+
+* Input
+  Names (in various formats) from a file. 
+
+* Output
+  Names in the given format: "Last, First M1 M2 ..." 
+
+* Process
+  Change the format of names to the given format: "Last, First M1 M2 ..." 
+  (as specified below) 
+
+* Specification: 
+ 
+  Consider following assumptions:
+  - There are input of 10 names.
+    (When you have no more name in the input file, the program stops.)  
+  - All input lines contain less than 30 characters.
+  - There can be more than one blank between the first and last names.
+  - There are no leading or trailing blanks.
+  - Only one last name exists in each name. Only one first name in a name. 
+  - The input may include several middle names. If we have an input with blanks 
+	within the names, we consider the input includes several middle names in it. 
+ 
+  Until (no more name in the input file)
+    Read each name from the iput file, and print it. 
+    Change names to the given format "Last, First M1 M2 ...", and print it. 
+
+  Output Example
+    Print both names (original, changed). 
+
+	Original  				Changed   
+	-----------------------------           ----------------------------
+	Last, First Middle                      Last, First Middle
+	Last,      First      Middle            Last, First Middle
+	First Middle Last                       Last, First Middle
+	First      Middle      Last             Last, First Middle
+	First Middle-1 Middle-2 Last            Last, First Middle-1 Middle-2
+	Last, First  Middle-1  Middle-2         Last, First Middle-1 Middle-2 
+	First      Last                         Last, First
+	Last,      First                        Last, First
+	... (build 2 more cases) 		... 
+	(total 10 different cases including above) 
+
+
